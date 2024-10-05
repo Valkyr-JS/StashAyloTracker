@@ -1,0 +1,18 @@
+name: Stash Aylo Tracker
+description: A Stash plugin which adds a page to track progress of scenes obtained from Aylo sites.
+url: https://github.com/Valkyr-JS/StashAyloTracker
+version: 1.0.0
+ui:
+  assets:
+    /: .
+  javascript:
+    - StashAyloTracker.js
+settings:
+  InstanceToken:
+    displayName: Instance token
+    description: Copy/paste the instance token from a logged-in Aylo request header here.
+    type: STRING
+  AuthToken:
+    displayName: Auth token
+    description: Copy/paste the authorization token from a logged-in Aylo request header here.
+    type: STRING
