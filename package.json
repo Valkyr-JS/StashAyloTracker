@@ -4,7 +4,10 @@
   "description": "A Stash plugin which adds a page to track progress of scenes obtained from Aylo sites.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "app:build": "webpack --config webpack/webpack.config.js",
+    "app:serve": "webpack serve --config webpack/webpack.config.js",
+    "build": "npm run app:build && npm run plugin:build",
+    "plugin:build": "webpack --config webpack/plugin.config.js"
   },
   "repository": {
     "type": "git",
